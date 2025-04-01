@@ -1,77 +1,80 @@
 <!DOCTYPE html>
-<html lang="pl">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Leo Messi - Legenda Futbolu</title>
-  <link href="./output.css" rel="stylesheet">
-</head>
-<body class="font-sans bg-gray-100 p-6">
-  <header class="bg-sky-500 shadow-md p-6 mb-6">
-    <h1 class="text-4xl font-bold text-white">Leo Messi - Legenda Futbolu</h1>
-  </header>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Messi & Tailwind</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+      body {
+        font-family: 'Inter', sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-sky-50 text-gray-800 p-6">
+    <h1 class="text-4xl font-bold text-sky-600 mb-4">Leo Messi - Tailwind Demo</h1>
 
-  <section class="mb-6">
-    <p class="text-sky-500">Lionel Messi to jeden z najwybitniejszych piłkarzy w historii.</p>
-    <p class="text-emerald-600">Zdobywca wielu Złotych Piłek i mistrz świata 2022.</p>
-    <p class="text-rose-500">Jego kariera w FC Barcelonie przeszła do historii.</p>
-    <a href="https://en.wikipedia.org/wiki/Lionel_Messi" class="text-indigo-500 underline">Czytaj więcej na Wikipedii</a>
-  </section>
+    <p class="text-red-500 mb-2">Pierwszy kolor tekstu: Messi urodził się w Rosario, Argentyna.</p>
+    <p class="text-green-500 mb-2">Drugi kolor tekstu: Jako 13-latek dołączył do FC Barcelony.</p>
+    <p class="text-blue-500 mb-2">Trzeci kolor tekstu: W 2022 roku zdobył Mistrzostwo Świata z Argentyną.</p>
 
-  <section class="mb-6">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/8/89/Leo_Messi_20180626.jpg" alt="Leo Messi" class="rounded shadow-lg w-1/2 mx-auto">
-  </section>
+    <a href="#" class="text-pink-600 underline">Więcej o Messim</a><br/>
+    <a href="#" class="text-yellow-600 underline">Zobacz statystyki</a>
 
-  <section class="mb-6">
-    <h2 class="text-xl font-semibold mb-2">Statystyki kariery</h2>
-    <table class="table-auto border-collapse border border-gray-400 w-full">
-      <thead>
-        <tr class="bg-blue-100">
-          <th class="border border-gray-300 px-4 py-2">Sezon</th>
-          <th class="border border-gray-300 px-4 py-2">Klub</th>
-          <th class="border border-gray-300 px-4 py-2">Gole</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td class="border border-gray-300 px-4 py-2">2011/12</td>
-          <td class="border border-gray-300 px-4 py-2">FC Barcelona</td>
-          <td class="border border-gray-300 px-4 py-2">73</td>
-        </tr>
-        <tr>
-          <td class="border border-gray-300 px-4 py-2">2022/23</td>
-          <td class="border border-gray-300 px-4 py-2">PSG</td>
-          <td class="border border-gray-300 px-4 py-2">21</td>
-        </tr>
-      </tbody>
-    </table>
-  </section>
-
-  <section class="mb-6">
-    <div class="flex items-center gap-2">
-      <span class="animate-ping inline-flex h-4 w-4 rounded-full bg-red-500"></span>
-      <span class="text-gray-700">Na boisku - nie do zatrzymania!</span>
+    <div class="mt-6">
+      <div class="bg-sky-100 p-4 shadow-md mb-4">Messi zdobył 7 Złotych Piłek, co czyni go rekordzistą w tej kategorii.</div>
+      <div class="bg-emerald-200 p-4 shadow-lg mb-4">Przez ponad 15 lat był kluczowym zawodnikiem FC Barcelony, zdobywając z klubem 35 trofeów.</div>
+      <div class="bg-orange-100 p-4 shadow-2xl mb-4">W 2023 roku dołączył do Inter Miami, przynosząc piłkarską magię do MLS.</div>
     </div>
-  </section>
 
-  <section class="mb-6">
-    <h2 class="text-xl font-semibold mb-2">Stylizacja Flex</h2>
-    <div class="flex flex-row gap-4 mb-4">
-      <div class="bg-orange-200 p-4">Flex-row 1</div>
-      <div class="bg-orange-300 p-4">Flex-row 2</div>
+    <div class="mt-6">
+      <span class="h-4 w-4 bg-red-500 rounded-full animate-ping inline-block"></span>
+      <span class="ml-2">Messi ping!</span>
     </div>
-    <div class="flex flex-col gap-4">
-      <div class="bg-lime-200 p-4">Flex-col 1</div>
-      <div class="bg-lime-300 p-4">Flex-col 2</div>
-    </div>
-  </section>
 
-  <section>
-    <h2 class="text-xl font-semibold mb-2">Elastyczność elementów</h2>
-    <div class="flex border border-black">
-      <div class="flex-none bg-purple-300 p-4">flex-none</div>
-      <div class="flex-auto bg-purple-100 p-4">flex-auto</div>
+    <div class="mt-6">
+      <table class="table-auto border border-collapse border-gray-400">
+        <thead>
+          <tr class="bg-sky-300">
+            <th class="border px-4 py-2">Statystyka</th>
+            <th class="border px-4 py-2">Wartość</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="border px-4 py-2">Gole</td>
+            <td class="border px-4 py-2">800+</td>
+          </tr>
+          <tr>
+            <td class="border px-4 py-2">Asysty</td>
+            <td class="border px-4 py-2">350+</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
-  </section>
-</body>
+
+    <div class="mt-6">
+      <h2 class="text-2xl font-bold mb-2">Flex direction</h2>
+      <div class="flex flex-row gap-2 mb-4 bg-gray-100 p-2">
+        <div class="bg-blue-300 p-2">Messi w Barcelonie</div>
+        <div class="bg-blue-400 p-2">Messi w PSG</div>
+        <div class="bg-blue-500 p-2">Messi w Inter Miami</div>
+      </div>
+      <div class="flex flex-col gap-2 bg-gray-100 p-2">
+        <div class="bg-green-300 p-2">Debiut w 2004</div>
+        <div class="bg-green-400 p-2">Hat-trick przeciwko Realowi</div>
+        <div class="bg-green-500 p-2">Mistrz Świata 2022</div>
+      </div>
+    </div>
+
+    <div class="mt-6">
+      <h2 class="text-2xl font-bold mb-2">Flex sizing</h2>
+      <div class="flex gap-2">
+        <div class="flex-none bg-purple-300 p-2 w-20 text-center">Logo</div>
+        <div class="flex-auto bg-purple-400 p-2 text-center">Opis kariery Leo Messiego – jeden z najwybitniejszych piłkarzy w historii futbolu.</div>
+        <div class="flex-none bg-purple-500 p-2 w-20 text-center">GOAT</div>
+      </div>
+    </div>
+  </body>
 </html>
