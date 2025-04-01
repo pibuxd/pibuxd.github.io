@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leo Messi - Legenda Futbolu</title>
+  <link href="./output.css" rel="stylesheet">
+</head>
+<body class="font-sans bg-gray-100 p-6">
+  <!-- Nagłówek z kolorowym tekstem -->
+  <header class="bg-sky-500 shadow-md p-6 mb-6">
+    <h1 class="text-4xl font-bold text-white">Leo Messi - Legenda Futbolu</h1>
+  </header>
+
+  <!-- Sekcja z kolorowym tekstem i tłem -->
+  <section class="mb-6">
+    <p class="text-sky-500">Lionel Messi to jeden z najwybitniejszych piłkarzy w historii.</p>
+    <p class="text-emerald-600">Zdobywca wielu Złotych Piłek i mistrz świata 2022.</p>
+    <p class="text-rose-500">Jego kariera w FC Barcelonie przeszła do historii.</p>
+    <a href="https://en.wikipedia.org/wiki/Lionel_Messi" class="text-indigo-500 underline">Czytaj więcej na Wikipedii</a>
+  </section>
+
+  <!-- Obrazek z cieniem -->
+  <section class="mb-6">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/8/89/Leo_Messi_20180626.jpg" alt="Leo Messi" class="rounded shadow-lg w-1/2 mx-auto">
+  </section>
+
+  <!-- Tabela statystyk z table-auto -->
+  <section class="mb-6">
+    <h2 class="text-xl font-semibold mb-2">Statystyki kariery</h2>
+    <table class="table-auto border-collapse border border-gray-400 w-full">
+      <thead>
+        <tr class="bg-blue-100">
+          <th class="border border-gray-300 px-4 py-2">Sezon</th>
+          <th class="border border-gray-300 px-4 py-2">Klub</th>
+          <th class="border border-gray-300 px-4 py-2">Gole</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="border border-gray-300 px-4 py-2">2011/12</td>
+          <td class="border border-gray-300 px-4 py-2">FC Barcelona</td>
+          <td class="border border-gray-300 px-4 py-2">73</td>
+        </tr>
+        <tr>
+          <td class="border border-gray-300 px-4 py-2">2022/23</td>
+          <td class="border border-gray-300 px-4 py-2">PSG</td>
+          <td class="border border-gray-300 px-4 py-2">21</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Ping animacja -->
+  <section class="mb-6">
+    <div class="flex items-center gap-2">
+      <span class="animate-ping inline-flex h-4 w-4 rounded-full bg-red-500"></span>
+      <span class="text-gray-700">Na boisku - nie do zatrzymania!</span>
+    </div>
+  </section>
+
+  <!-- Flex row vs column -->
+  <section class="mb-6">
+    <h2 class="text-xl font-semibold mb-2">Stylizacja Flex</h2>
+    <div class="flex flex-row gap-4 mb-4">
+      <div class="bg-orange-200 p-4">Flex-row 1</div>
+      <div class="bg-orange-300 p-4">Flex-row 2</div>
+    </div>
+    <div class="flex flex-col gap-4">
+      <div class="bg-lime-200 p-4">Flex-col 1</div>
+      <div class="bg-lime-300 p-4">Flex-col 2</div>
+    </div>
+  </section>
+
+  <!-- Flex-auto i flex-none -->
+  <section>
+    <h2 class="text-xl font-semibold mb-2">Elastyczność elementów</h2>
+    <div class="flex border border-black">
+      <div class="flex-none bg-purple-300 p-4">flex-none</div>
+      <div class="flex-auto bg-purple-100 p-4">flex-auto</div>
+    </div>
+  </section>
+</body>
+</html>
